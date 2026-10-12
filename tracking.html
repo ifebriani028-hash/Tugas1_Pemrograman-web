@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking Pengiriman - SITTA UT</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand"><img src="img/ut.png" alt="" style="max-width: 50px;"></div>
+        <ul class="nav-menu">
+            <li><a href="dashboard.html" class="active">Beranda</a></li>
+            <li><a href="stok.html">Informasi Bahan Ajar</a></li>
+            <li><a href="tracking.html" class="active">Tracking Pengiriman</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Laporan ▼</a>
+                <div class="dropdown-content">
+                    <a href="#">Monitoring Progress DO Bahan Ajar</a>
+                    <a href="#">Rekap Bahan Ajar</a>
+                </div>
+            </li>
+            <li><a href="login.html" class="btn-logout">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+        <h2>Tracking Pengiriman DO Bahan Ajar</h2>
+        <div class="search-box">
+            <label>Masukan No.DO</label>
+            <input type="text" id="noDO" required>
+            <button id="btnCariDO" class="btn-primary">Cari</button>
+        </div>
+
+        <div id="trackingResult" class="hidden">
+            <div class="result-card">
+            <h3 id="resNama">-</h3>
+            <p id="resNoDO">-</p>
+            <p>Kurir: <span id="resKurir">-</span></p>
+            <p>Tanggal Kirim: <span id="resTanggal">-</span></p>
+            <p>Paket: <span id="resPaket">-</span></p>
+            <p>Total: <span id="resTotal">-</span></p>
+            </div>
+        <h4 style="margin-top: 15px;">Perjalanan Paket</h4>
+        <ul id="timelineList" class="timeline">
+        <!-- Data timeline dirender dinamis -->
+        </ul>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

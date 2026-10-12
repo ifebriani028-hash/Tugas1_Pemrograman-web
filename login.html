@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SITTA UT</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <h2>SELAMAT DATANG</h2>
+        <p class="subtitle">Login SITTA</p>
+        
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+            </div>
+            <button type="submit" class="btn-primary">Masuk</button>
+        </form>
+
+        <div class="login-links">
+            <a href="#" id="btnLupaPassword">Lupa password?</a>
+            <a href="#" id="btnDaftar">Daftar Akun</a>
+        </div>
+    </div>
+
+    <!-- Modal Box / Pop-up -->
+    <div id="modalBox" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalMessage"></p>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stok Bahan Ajar - SITTA UT</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand"><img src="img/ut.png" alt="" style="max-width: 50px;"></div>
+        <ul class="nav-menu">
+            <li><a href="dashboard.html" class="active">Beranda</a></li>
+            <li><a href="stok.html" class="active">Informasi Bahan Ajar</a></li>
+            <li><a href="tracking.html">Tracking Pengiriman</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Laporan ▼</a>
+                <div class="dropdown-content">
+                    <a href="#">Monitoring Progress DO Bahan Ajar</a>
+                    <a href="#">Rekap Bahan Ajar</a>
+                </div>
+            </li>
+            <li><a href="login.html" class="btn-logout">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+        <h2>Informasi Stok Bahan Ajar</h2>
+        
+        <h3>Daftar Data Bahan Ajar</h3>
+        <div id="stokContainer" class="stok-grid">
+            <!-- Data bahan ajar & cover buku akan dimuat dinamis di sini -->
+        </div>
+        
+        <!--form tambah stok-->
+        <div class="card-form" style="margin-top: 20px;">
+            <h3>Tambah Stok Baru</h3>
+            <form id="formTambahStok">
+                <label>Kode Lokasi</label>
+                <input type="text" id="kodeLokasi" required>
+                <label>Kode Barang</label>
+                <input type="text" id="kodeBarang" required>
+                <label>Nama Barang</label>
+                <input type="text" id="namaBarang" required>
+                <label>Jenis Barang</label>
+                <input type="text" id="jenisBarang" required>
+                <label>Edisi</label>
+                <input type="text" id="edisi" required>
+                <label>Stok</label>
+                <input type="number" id="stok" required>
+                <label>Gambar Cover</label>
+                <input type="text" id="cover" placeholder="Path Gambar Cover (cth: img/pengantar_komunikasi.jpg)" required>
+                <button type="submit" class="btn-success">Tambah Stok</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
